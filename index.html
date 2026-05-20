@@ -589,6 +589,14 @@ footer{background:var(--dark2);padding:36px 5vw 24px;border-top:1px solid rgba(2
   z-index:3;
 }
 
+
+.cta-btn-ghost{border:1.5px solid rgba(255,255,255,.25);color:#fff;padding:14px 28px;border-radius:100px;font-size:.9rem;font-weight:700;text-decoration:none;transition:all .25s;letter-spacing:-.01em}
+.cta-btn-ghost:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.5)}
+
+
+.humana-btn{display:inline-flex;align-items:center;gap:8px;margin-top:24px;background:var(--g3);color:#fff;padding:13px 26px;border-radius:100px;font-size:.88rem;font-weight:700;text-decoration:none;transition:all .25s;letter-spacing:-.01em;align-self:flex-start}
+.humana-btn:hover{background:var(--g2);transform:translateY(-2px);box-shadow:0 8px 24px rgba(39,107,70,.3)}
+
 /* ─── RESPONSIVE ─── */
 @media(max-width:960px){
   .hero{grid-template-columns:1fr;text-align:center;padding-top:100px}
@@ -604,6 +612,12 @@ footer{background:var(--dark2);padding:36px 5vw 24px;border-top:1px solid rgba(2
   .humana-txt{padding:48px 5vw}
   .wapp-left{order:-1}
 }
+
+.nav-enter{font-size:.8rem;font-weight:600;color:var(--g);text-decoration:none;padding:8px 16px;border:1.5px solid var(--g);border-radius:100px;transition:all .2s;white-space:nowrap;letter-spacing:-.01em}
+.nav-enter:hover{background:var(--g);color:#fff}
+.cta-btn-ghost{border:1.5px solid rgba(255,255,255,.25);color:#fff;padding:14px 28px;border-radius:100px;font-size:.9rem;font-weight:700;text-decoration:none;transition:all .25s;letter-spacing:-.01em}
+.cta-btn-ghost:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.5)}
+
 </style>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23276B46'/%3E%3Ccircle cx='16' cy='16' r='13' stroke='white' stroke-width='1.5' fill='none'/%3E%3Crect x='13' y='5' width='5.5' height='4' rx='1.2' stroke='white' stroke-width='1.3' fill='none' transform='rotate(7,13,5)'/%3E%3Crect x='12.5' y='10' width='6.5' height='4' rx='1.2' stroke='white' stroke-width='1.3' fill='none' transform='rotate(4,12.5,10)'/%3E%3Crect x='12' y='15' width='7.5' height='4' rx='1.2' stroke='white' stroke-width='1.3' fill='none' transform='rotate(1,12,15)'/%3E%3Crect x='12' y='20.5' width='7.5' height='3.5' rx='1.2' stroke='white' stroke-width='1.3' fill='none' transform='rotate(-2,12,20.5)'/%3E%3Cline x1='6' y1='14.5' x2='13' y2='12.5' stroke='white' stroke-width='1.3' stroke-linecap='round'/%3E%3Ccircle cx='13' cy='12.5' r='1.6' fill='white'/%3E%3Cline x1='19' y1='19' x2='25' y2='18' stroke='white' stroke-width='1.3' stroke-linecap='round'/%3E%3Ccircle cx='19' cy='19' r='1.6' fill='white'/%3E%3C/svg%3E">
 </head>
@@ -620,6 +634,7 @@ footer{background:var(--dark2);padding:36px 5vw 24px;border-top:1px solid rgba(2
     <li><a href="#planos">Planos</a></li>
     <li><a href="#depoimentos">Depoimentos</a></li>
   </ul>
+  <a href="https://app.spinetrack.com.br" class="nav-enter" target="_blank" rel="noopener">Acessar Minha Conta</a>
   <a href="https://wa.me/5555924810050?text=Ol%C3%A1%20doc%2C%20quero%20meu%20acesso%20antecipado%20ao%20SpineTrack!" class="nav-cta" href="https://wa.me/5555924810050?text=Ol%C3%A1%20doc%2C%20quero%20meu%20acesso%20antecipado%20ao%20SpineTrack!">Quero Acesso Antecipado</a>
 </nav>
 
@@ -880,6 +895,10 @@ footer{background:var(--dark2);padding:36px 5vw 24px;border-top:1px solid rgba(2
         <li>Canal direto com a equipe médica quando necessário</li>
         <li>Pacientes mais aderentes, resultados melhores, menos reoperações</li>
       </ul>
+      <a href="https://app.spinetrack.com.br" class="humana-btn" target="_blank" rel="noopener">
+        Acessar Área do Paciente
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
     </div>
   </div>
 </div>
@@ -999,7 +1018,7 @@ footer{background:var(--dark2);padding:36px 5vw 24px;border-top:1px solid rgba(2
     <p>Junte-se aos cirurgiões que já estão usando o SpineTrack para oferecer melhores resultados com mais rapidez e acolhimento.</p>
     <div class="cta-acts">
       <a href="https://wa.me/5555924810050?text=Ol%C3%A1%20doc%2C%20quero%20meu%20acesso%20antecipado%20ao%20SpineTrack!" class="cta-btn" href="https://wa.me/5555924810050?text=Ol%C3%A1%20doc%2C%20quero%20meu%20acesso%20antecipado%20ao%20SpineTrack!">Quero Acesso Antecipado</a>
-      <span class="cta-ct">contato@spinetrack.com.br</span>
+      <a href="https://app.spinetrack.com.br" class="cta-btn-ghost" target="_blank" rel="noopener">Entrar Agora</a>
     </div>
   </div>
 </section>
